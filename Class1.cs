@@ -4,23 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace ConsoleApp2
 {
     internal class Class1
     {
-        static void Main()
+        public static void Main()
         {
-            Console.WriteLine("Enter Your Age");
-            int age=Convert.ToInt32(Console.ReadLine());
-            if (age >= 18)
-            {
-                Console.WriteLine("You are Eligible for Voting");
-            }
-            else
-            {
-                Console.WriteLine("You are Not Eligible for Voting");
-            }
-        }
+            float nm = 3.232323f;
+            double n = 8.2329898898377678779877686787;
+            decimal d = 2.123456789123456789123456789123456789123456789m;
+            long phone = 1234567891234567891;
+            int a = 1234567891;
+            byte b = 233;
 
+            Console.WriteLine(nm);
+            Console.WriteLine(n);
+            Console.WriteLine(d);
+            Console.WriteLine(phone);
+            Console.WriteLine(a);
+
+
+        }
     }
 }
