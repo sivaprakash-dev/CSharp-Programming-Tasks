@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-
-namespace ConsoleApp_Exception
+namespace Consol__exxception_
 {
-    class Application_Exception
+    internal class Application_Exception
     {
         public static void Main(string[] args)
         {
