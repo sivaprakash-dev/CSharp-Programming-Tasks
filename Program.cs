@@ -1,130 +1,75 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Exception
+namespace Array
 {
-    internal class Exception
+    class Program
     {
-        public static void Main()
+        // Main method is the entry point of the program
+        // It is where the program starts execution
+        // In this program, we will create an array of integers and print its elements
+        // An array is a collection of items stored at contiguous memory locations
+        // We will create an array of 5 integers and initialize it with some values
+        // Then we will use a for loop to iterate through the array and print each element
+        // We will also create a multi-dimensional array (2D array) and print its elements using nested for loops
+
+        static void Main(string[] args)
         {
+            
+            ////single dimensional array
+            //int[] array = { 11, 22, 33, 44, 55 };
 
-            //OverflowException
+            //for (int i = 0; i < 5; i++)
+            //Console.WriteLine(array[i]);
 
-            //int data type digit limit Thaandi kudutha-- > OverflowException
-            try
-            {
-                Console.Write("Enter Your Value:");
-                int val = int.Parse(Console.ReadLine());
+            //--------------------------------------------------------------------------------------------
 
-            }
-            catch (OverflowException)
-            {
-                Console.WriteLine("Your Digit Number Overflow");
-            }
-            finally
-            {
-                Console.WriteLine("Program Done");
-            }
+            //multi dimensional array
 
-
-
-
-
-
-
-
-
-
-
-            //DivideByZeroException
-            // Entha Value vum 0 vaala divide panna mudiyaathu ---> DivideByZeroException
-
-            //try
+            //int[,] arr =
             //{
-            //    Console.WriteLine("Enter First Value:");
-            //    int val = int.Parse(Console.ReadLine());
+            //    {22,44,55},
+            //    {66,77,88},
+            //    {19,12,21},
+                
+            //};
 
-            //    Console.WriteLine("Enter Second Value:");
-            //    int val1 = int.Parse(Console.ReadLine());
-
-            //    int res = val / val1;
-            //    Console.WriteLine("Result:" + res);
-            //}
-            //catch (DivideByZeroException)
+            //for(int i =0; i < 3; i++)
             //{
-            //    Console.WriteLine("Any Number Not Divided by Zero");
-            //}
-
-
-
-
-
-
-
-
-
-
-            //FormatException
-
-            // value data type la letters kudutha--->FormatException
-            //try
-
-            //{
-            //    Console.WriteLine("Enter Your Age:");
-            //    int age = int.Parse(Console.ReadLine());
-            //}
-            //catch (FormatException)
-            //{
-            //    Console.WriteLine("Enter Only Value Data Type");
-            //}
-
-
-
-
-
-
-
-
-
-
-
-
-
-            //    try
-            //    {
-            //        int[] number = { 21, 32, 4, 232, 4, 2 };
-
-            //        Console.WriteLine(number[6]);          
-            //}
-            //    catch (IndexOutOfRangeException)
-            //    {
-            //        Console.WriteLine("Index Value Limited Access");
+            //    for(int j = 0; j <3; j++)
+            //    {                  
+            //            Console.WriteLine(arr[i,j]);
             //    }
-
-
-
-
-
-
-
-
-
-
-
-            //for (int i = 1; i <= 10; i++)
-
-            //{
-            //    int b = i * i;
-            //    Console.WriteLine(b);
+            
             //}
 
 
+            //----------------------------------------------------------------------------------------------
+            
 
+            string[] name = new string[5];
+            name[0] = "Siva";
+            name[1] = "Prakash";
+            name[2] = "Jhone";
+            name[3] = "Ragul";
+            name[4] = "Sri";
 
+            for(int i = 0; i< 5; i++)
+            {
+                Console.WriteLine(name[i]);
+            }
 
         }
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+
